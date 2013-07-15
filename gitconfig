@@ -1,0 +1,31 @@
+[user]
+	name = Timothy O'Hare
+	email = timohare+github@gmail.com
+[diff]
+	tool = bc3
+    mnemonicprefix = true
+    renames = copies
+[difftool "bc3"]
+	path = /usr/bin/bcompare
+[difftool]
+	prompt = false
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	path = /usr/bin/bcompare
+    trustExitCode = true
+[core]
+    whitespace = trailing-space,cr-at-eol
+[branch]
+    autosetupmerge = true
+[push]
+    default = tracking
+[rerere]
+    enabled = true
+[color]
+    ui = auto
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[credential]
+	helper = cache
