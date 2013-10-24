@@ -36,5 +36,6 @@ if &diff
     set diffopt+=iwhite
     colorscheme desert
 endif
-set background=dark
+set background=light
 
+execute pathogen#infect()

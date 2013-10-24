@@ -74,7 +74,7 @@ then
     export PS1="\[\e[32;1m\]\u@\H > \[\e[0m\]"
 else
     #we're not on the console, assume an xterm
-    export PS1="\[\e]2;\u@\H \w\a\e[32;1m\]>\[\e[0m\] " 
+    export PS1="\[\e]2;\u@\H \w\a\e[32;1m\]>\[\e[0m\] "
 fi
 
 export PS1='\[\e[36;1m\]\u@\[\e[32;1m\]\h:\w$(__git_ps1 "(%s)")>\[\e[0m\]'
@@ -106,3 +106,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+source ~/.bash_git
