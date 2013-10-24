@@ -1,4 +1,3 @@
-syntax on
 
 set autoindent
 set ignorecase
@@ -39,3 +38,6 @@ endif
 set background=light
 
 execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
