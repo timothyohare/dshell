@@ -107,6 +107,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/dev/github/ansible/bin
+export PYTHONPATH=$PYTHONPATH:/home/timo/dev/github/ansible/lib
+export MANPATH=$MAPATH:/home/timo/dev/github/ansible/docs/man
 
 source ~/.bash_git

@@ -10,3 +10,4 @@ ln -sf dshell/wgetrc .wgetrc
 #ln -sf dshell/curlrc .curlrc
 ln -sf dshell/tmux .tmux.conf
 ln -sf dshell/bash_git .bash_git
+ln -sf dshell/vim .vim

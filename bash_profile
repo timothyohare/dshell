@@ -21,3 +21,6 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
   trap "kill $SSH_AGENT_PID" 0
 fi
 ssh-add
+
+PATH=$PATH:$HOME/dev/adt-bundle-linux-x86_64-20140702/sdk/tools:$HOME/dev/adt-bundle-linux-x86_64-20140702/sdk/platform-tools:$HOME/dev/android-studio/bin
+
